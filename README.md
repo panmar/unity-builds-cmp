@@ -3,6 +3,7 @@
 A simple python script comparing C++ compilation speed of unity builds vs normal builds.
 
 ## Requirements
+- python3
 - g++
 - clang++
 - make
