@@ -10,7 +10,7 @@ A simple python script comparing C++ compilation speed of unity builds vs normal
 
 ## Example output
 ```
-➜  unity-builds-cmp git:(main) ✗ python test_unity_build.py
+➜  unity-builds-cmp git:(main) ✗ python test_unity_build.py 10000
 Cleaning src/ directory
 Generating 10000 files...
 Compiling unity build... [g++]
