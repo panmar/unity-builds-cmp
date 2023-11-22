@@ -2,8 +2,8 @@ CPPFILES = $(wildcard src/*.cc)
 OBJFILES = $(CPPFILES:.cc=.o)
 OUT      = main
 
-CC 	    = clang++
-CCFLAGS = -pipe
+CXX 	= clang++
+CXXFLAGS = -pipe
 
 $(OUT): $(OBJFILES)
 
