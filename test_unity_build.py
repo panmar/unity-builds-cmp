@@ -3,6 +3,7 @@ import os
 import shutil
 import subprocess
 import time
+import sys
 
 
 def generate_class_file(filepath, classname):
@@ -54,8 +55,15 @@ def generate_unity_file_content(index_generator):
 
 
 def main():
+    if len(sys.argv) < 2:
+        print("Too few arguments. Tell me how many source files should I generate.")
+        return
+    elif len(sys.argv) > 2:
+        print("Too many arguments")
+        return
+
+    num_files = int(sys.argv[1])
     src_dir = "src/"
-    num_files = 10_000
 
     try:
         shutil.rmtree(src_dir)
